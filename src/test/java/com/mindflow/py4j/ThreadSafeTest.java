@@ -26,7 +26,7 @@ public class ThreadSafeTest {
 
                     System.out.println("thread "+Thread.currentThread().getName()+" start");
                     for(int i=0;i<1000;i++){
-                        converter.getPinyin(arr[i%arr.length]);
+                        converter.getPinyin(arr[i%arr.length], null, true);
                     }
                     System.out.println("thread "+Thread.currentThread().getName()+" over");
                     return null;
